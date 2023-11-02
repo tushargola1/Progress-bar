@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root {
+  --grey-color: rgb(206, 204, 204);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vw;
+}
+
+.steps {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  outline: 0.35vw solid rgb(206, 204, 204);
+  display: inline-block;
+  border: 4px solid;
+  border-color: transparent;
+  border-radius: 50%;
+  font-weight: 600;
+  text-align: center;
+  line-height: 30px;
+  transition: outline-color 1300ms ease;
+  transition-delay: 0.1s;
+} 
+
+.line {
+  background-color: var(--grey-color);
+  width: 7.5vw;
+  height: 0.2vw;
+  transition: background-color 1200ms ease;
+  transition-delay: 0.1s; 
+}
+
+.active {
+  outline-color: rgb(7, 184, 243);
+  transition: outline-color 1300ms ease;
+}
+
+.val {
+  background-color: rgb(7, 184, 243);
+  transition: background-color 1200ms ease; /* Make the background-color transition duration same as outline-color */
+}
+
+
+button{
+  padding: 0.8em 2em;
+  margin: 0 1vw;
+  background-color: rgb(7, 184, 243);
+  outline: 0;
+  border: 0;
+  border-radius: 1vw;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+.name{
+  position: absolute;
+  bottom: 0;
+}
