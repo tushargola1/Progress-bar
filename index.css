@@ -39,6 +39,7 @@ body {
   line-height: 30px;
   transition: outline-color 1300ms ease;
   transition-delay: 0.1s;
+  color:white;
 } 
 
 .line {
